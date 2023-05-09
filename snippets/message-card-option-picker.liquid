@@ -1,0 +1,11 @@
+{% assign message_options="HappyBirthDay,Congratulations!,おめでとうございます！,内祝" | split "," %}
+ <variant-selects
+      id="variant-selects-{{ section.id }}"
+      class="no-js-hidden"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+      {{ block.shopify_attributes }}
+    >
