@@ -81,19 +81,19 @@
         "template--19023265136956__e221db90-869e-4f90-9b9f-aae8eb710628-1683552229cc3c67e7-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "template--19023265136956__e221db90-869e-4f90-9b9f-aae8eb710628-1683552229cc3c67e7-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "コーヒー"
           }
         },
         "template--19023265136956__e221db90-869e-4f90-9b9f-aae8eb710628-1683552229cc3c67e7-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "ティー"
           }
         }
       },
@@ -151,7 +151,7 @@
         "template--19034514817340__a9de9288-c4aa-4623-b986-2a1b055dd2d6-1683615514f6b29e43-2": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "プレゼントにおすすめ"
           }
         }
       },
