@@ -1,8 +1,8 @@
-{%- assign message_options="HappyBirthDay,Congratulations!,おめでとうございます！,内祝" | split "," -%}
+{% assign message_options = 'HappyBirthDay,Congratulations!,おめでとうございます！,内祝' | split: ',' %}
 <label>メッセージカード【オプション】</label>
 <select id="message_option" name="properties[Message Card]">
-  <option value="ギフトカードなし">
-  {%- for option in message_options -%}
+  <option value="ギフトカードなし">ギフトカードなし</option>
+  {% for option in message_options %}
     <option value="{{ option }}">{{ option }}</option>
-  {%- endfor -%}
+  {% endfor %}
 </select>

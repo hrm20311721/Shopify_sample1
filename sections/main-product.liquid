@@ -432,6 +432,8 @@
               {% render 'icon-with-text',
                 block: block
               %}
+            {%- when 'message-card-option' %}
+              {% render 'message-card-option-picker' %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1898,6 +1900,10 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "name": "メッセージカードオプション",
+      "type": "message-card-option"
     }
   ],
   "settings": [
