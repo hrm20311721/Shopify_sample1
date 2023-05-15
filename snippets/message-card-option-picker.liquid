@@ -1,7 +1,7 @@
 {% assign message_options = 'HappyBirthDay,Congratulations!,おめでとうございます！,内祝' | split: ',' %}
 <div class="line-item-property__field">
   <label>メッセージカード【オプション】</label>
-  <select id="" form="{{ id }}" name="properties[メッセージカード【オプション】]">
+  <select id="" form="{{ id }}" name="properties[メッセージカード]">
     <option value="">ギフトカードなし</option>
     {% for option in message_options %}
       <option value="{{ option }}">{{ option }}</option>
