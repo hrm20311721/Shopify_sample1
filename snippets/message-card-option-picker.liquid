@@ -1,6 +1,6 @@
 {% assign message_options = 'HappyBirthDay,Congratulations!,おめでとうございます！,内祝' | split: ',' %}
 <label>メッセージカード【オプション】</label>
-<select id="" form="{{ id }}" name="properties[Message Card]">
+<select id="" form="{{ id }}" name="properties[_Message Card]">
   <option value="ギフトカードなし">ギフトカードなし</option>
   {% for option in message_options %}
     <option value="{{ option }}">{{ option }}</option>
