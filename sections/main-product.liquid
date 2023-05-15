@@ -434,7 +434,7 @@
                 block: block
               %}
             {%- when 'message-card-option' %}
-              
+              {% render 'message-card-option-picker' %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
