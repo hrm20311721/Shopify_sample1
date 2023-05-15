@@ -112,6 +112,7 @@
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
+                  
                 {%- endform -%}
               </div>
             {%- when 'inventory' -%}
@@ -433,7 +434,7 @@
                 block: block
               %}
             {%- when 'message-card-option' %}
-              {% render 'message-card-option-picker' %}
+              
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1903,7 +1904,9 @@
     },
     {
       "name": "メッセージカードオプション",
-      "type": "message-card-option"
+      "type": "message-card-option",
+      "limit": 1,
+      "settings": []
     }
   ],
   "settings": [
