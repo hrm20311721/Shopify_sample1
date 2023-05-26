@@ -140,7 +140,6 @@
         type="checkbox"
         name="customer[note][accept_policy]"
         id="RegisterForm-acceptPolicy"
-        checked
         required
         aria-required="true"
         onclick="checkbox()"
@@ -165,8 +164,8 @@
     const chk = document.getElementById("RegisterForm-acceptPolicy");
     const button = document.getElementById("register_button");
     console.log(chk.checked);
-    if(chk.checked) {
-     console.log("true");
+    if(!chk.checked) {
+       button.
     }
   }
 </script>
