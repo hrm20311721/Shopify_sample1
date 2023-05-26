@@ -160,13 +160,13 @@
     </button>
   {%- endform -%}
 </div>
-{% javascript %}
+<script>
   function checkbox() {
     const chk = document.getElementById("RegisterForm-acceptPolicy");
     const button = document.getElementById("register_button");
     console.log(chk,button);
   }
-{% endjavascript %}
+</script>
 {% schema %}
 {
   "name": "t:sections.main-register.name",
