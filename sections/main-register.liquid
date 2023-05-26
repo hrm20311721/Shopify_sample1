@@ -145,7 +145,7 @@
         aria-required="true"
       >
       <label for="RegisterForm-acceptPolicy">
-        プライバシーポリシーに同意します。
+        <a href="{{ shop.privacy_policy }}">プライバシーポリシー</a>に同意します。
       </label>
     </div>
     <input
@@ -153,13 +153,20 @@
       name="customer[tags]"
       id="RegisterForm-tags"
       value="新規"
+      onclick="checkbox()"
     >
-    <button>
+    <button id="register_button">
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
 </div>
-
+{% javascript %}
+  function checkbox() {
+    const chk = document.getElementById("RegisterForm-acceptPolicy");
+    const button = document.getElementById("register_button");
+    console.log(chk,button);
+  }
+{% endjavascript %}
 {% schema %}
 {
   "name": "t:sections.main-register.name",
