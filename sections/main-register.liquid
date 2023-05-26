@@ -143,6 +143,7 @@
         checked
         required
         aria-required="true"
+        onclick="checkbox()"
       >
       <label for="RegisterForm-acceptPolicy">
         <a href="{{ shop.privacy_policy }}">プライバシーポリシー</a>に同意します。
@@ -153,7 +154,6 @@
       name="customer[tags]"
       id="RegisterForm-tags"
       value="新規"
-      onclick="checkbox()"
     >
     <button id="register_button">
       {{ 'customer.register.submit' | t }}
